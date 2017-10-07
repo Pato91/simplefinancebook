@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1206.0" stylesheets="@diosfinancestyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dios.finance.FXMLDocumentController">
+    <children>
+      <JFXTabPane layoutX="5.0" layoutY="2.0" prefHeight="702.0" prefWidth="1192.0">
+         <tabs>
+            <Tab fx:id="submit_revenue" closable="false" text="Cash Revenue">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="664.0" prefWidth="1187.0">
+                           <children>
+                              <GridPane>
+                                 <children>
+                                    <Label fx:id="revenue_title_lbl" text="NEW ENTRY">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane GridPane.rowIndex="1">
+                                       <children>
+                                          <GridPane>
+                                             <children>
+                                                <Label text="Patient Name">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="patientname" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="1">
+                                             <children>
+                                                <Label text="Phone Number">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="phonenumber" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="2">
+                                             <children>
+                                                <Label text="Address">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="address" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="3">
+                                             <children>
+                                                <Label text="Condition">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="condition" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="4">
+                                             <children>
+                                                <Label text="Charge(Ugx)">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <JFXTextField fx:id="charge" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="5">
+                                             <children>
+                                                <Label text="Date of Visit">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <DatePicker fx:id="date_of_visit" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </DatePicker>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <children>
+                                          <JFXButton id="button" fx:id="submit_revenue_btn" onAction="#submit_revenue_action" ripplerFill="#45f85d" text="Submit" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="Ubuntu" size="15.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton id="button" fx:id="cancel_button" ripplerFill="#45f85d" text="Cancel" visible="false">
+                                             <font>
+                                                <Font name="Ubuntu" size="15.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="232.0" minHeight="4.0" prefHeight="9.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="575.0" minHeight="10.0" prefHeight="570.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="631.0" minHeight="10.0" prefHeight="625.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="324.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TableView fx:id="revenue_tbl" prefHeight="200.0" prefWidth="200.0">
+                                       <columns>
+                                          <TableColumn id="normal_col" fx:id="revenue_number_col" prefWidth="60.0" text="No:" />
+                                          <TableColumn id="normal_col" fx:id="patient_nam_col" prefWidth="154.0" text="Patient Name" />
+                                          <TableColumn id="normal_col" fx:id="phone_no_col" minWidth="0.0" prefWidth="144.0" text="Phone No" />
+                                          <TableColumn id="normal_col" fx:id="address_col" minWidth="0.0" prefWidth="148.0" text="Address" />
+                                          <TableColumn id="normal_col" fx:id="condition_col" minWidth="0.0" prefWidth="123.0" text="Procedure" />
+                                          <TableColumn id="money_col" fx:id="charge_col" maxWidth="166.0" minWidth="0.0" prefWidth="138.0" text="Charge" />
+                                          <TableColumn id="normal_col" fx:id="date_of_visit_col" maxWidth="157.0" minWidth="0.0" prefWidth="112.0" text="Date of Visit" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane GridPane.rowIndex="1">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="509.0" minWidth="10.0" prefWidth="444.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="509.0" minWidth="10.0" prefWidth="183.0" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="144.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="114.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Total" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="Ubuntu Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="total_revenue_lbl" layoutX="527.0" layoutY="22.0" text="0.00/=" GridPane.columnIndex="2">
+                                             <font>
+                                                <Font name="Ubuntu Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="temp_revenue_id" visible="false" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="585.0" minWidth="10.0" prefWidth="285.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="909.0" minWidth="10.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="909.0" minWidth="10.0" prefWidth="884.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab id="button" fx:id="submit_expense" closable="false" text="Expenses">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="664.0" prefWidth="1187.0">
+                           <children>
+                              <GridPane>
+                                 <children>
+                                    <Label fx:id="expense_title_Lbl" text="NEW ENTRY">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane GridPane.rowIndex="1">
+                                       <children>
+                                          <GridPane>
+                                             <children>
+                                                <Label text="Item">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="item_txtFld" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="1">
+                                             <children>
+                                                <Label text="Category">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="category_TxtFld" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="2">
+                                             <children>
+                                                <Label text="Quantity">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="quantity_TxtFld" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="3">
+                                             <children>
+                                                <Label text="Rate(Ugx)">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="rate_TxtFld" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="4">
+                                             <children>
+                                                <Label text="Paid To">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <JFXTextField fx:id="paid_to_TxtFld" focusColor="#16ebee" maxWidth="278.0" minWidth="278.0" prefHeight="27.0" prefWidth="278.0" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="5">
+                                             <children>
+                                                <Label text="Date">
+                                                   <font>
+                                                      <Font name="Ubuntu Bold" size="14.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <DatePicker fx:id="date_Picker" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" />
+                                                   </GridPane.margin>
+                                                </DatePicker>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <children>
+                                          <JFXButton id="button" fx:id="submit_expense_btn" onAction="#submit_expense_action" ripplerFill="#45f85d" text="Submit" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="Ubuntu" size="15.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton id="button" fx:id="cancel_expense_button" ripplerFill="#45f85d" text="Cancel" visible="false">
+                                             <font>
+                                                <Font name="Ubuntu" size="15.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="232.0" minHeight="4.0" prefHeight="9.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="575.0" minHeight="10.0" prefHeight="570.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="620.0" minHeight="10.0" prefHeight="620.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="324.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TableView fx:id="expenses_tbl" prefHeight="200.0" prefWidth="200.0">
+                                       <columns>
+                                          <TableColumn id="normal_col" fx:id="expense_number_col" prefWidth="60.0" text="No:" />
+                                          <TableColumn id="normal_col" fx:id="item_col" prefWidth="193.0" text="Item" />
+                                          <TableColumn id="normal_col" fx:id="category_col" minWidth="0.0" prefWidth="152.0" text="Category" />
+                                          <TableColumn id="normal_col" fx:id="quantity_col" minWidth="0.0" prefWidth="132.0" text="Quantity" />
+                                          <TableColumn id="money_col" fx:id="rate_col" minWidth="0.0" prefWidth="100.0" text="Rate" />
+                                          <TableColumn id="normal_col" fx:id="paid_to_col" maxWidth="211.0" minWidth="0.0" prefWidth="121.0" text="Paid To" />
+                                          <TableColumn id="normal_col" fx:id="date_col" minWidth="0.0" prefWidth="120.0" text="Date" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane fx:id="total_expenses" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label text="Total" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="Ubuntu Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="total_expenses_lbl" layoutX="527.0" layoutY="22.0" text="0.00/=" GridPane.columnIndex="2">
+                                             <font>
+                                                <Font name="Ubuntu Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="temp_expense_id" text="Label" visible="false" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="509.0" minWidth="10.0" prefWidth="341.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="509.0" minWidth="10.0" prefWidth="161.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="178.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="204.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="585.0" minWidth="10.0" prefWidth="285.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="909.0" minWidth="10.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="909.0" minWidth="10.0" prefWidth="884.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Sales Summary">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="4.0" layoutY="1.0" prefHeight="647.0" prefWidth="1192.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TableView fx:id="summary_tbl" prefHeight="200.0" prefWidth="200.0">
+                                <columns>
+                                  <TableColumn id="normal_col" fx:id="month_col" prefWidth="254.0" text="Month" />
+                                  <TableColumn id="money_col" fx:id="cash_revenue_col" prefWidth="202.0" text="Cash Revenue" />
+                                    <TableColumn id="money_col" fx:id="expenses_col" prefWidth="225.0" text="Expenses" />
+                                    <TableColumn id="money_col" fx:id="profit_col" prefWidth="213.0" text="Profit" />
+                                    <TableColumn id="normal_col" fx:id="status_col" prefWidth="297.0" text="Status" />
+                                </columns>
+                              </TableView>
+                              <GridPane GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <LineChart fx:id="line_graph" title="Monthly Profit">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                    </LineChart>
+                                    <PieChart fx:id="pie_chart" title="Monthly Revenue" GridPane.columnIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                        <Label fx:id="caption" layoutX="83.0" layoutY="649.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Visits Summary">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="4.0" layoutY="1.0" prefHeight="647.0" prefWidth="1192.0">
+                           <children>
+                              <TableView fx:id="summary_patients_tbl" prefHeight="200.0" prefWidth="200.0">
+                                 <columns>
+                                    <TableColumn id="normal_col" fx:id="month_col1" prefWidth="254.0" text="Month" />
+                                    <TableColumn id="money_col" fx:id="Patients_no_col" prefWidth="202.0" text="No of Patients" />
+                                    <TableColumn id="money_col" fx:id="patient_stats_col" prefWidth="225.0" text="Patients No Status" />
+                                    <TableColumn id="money_col" fx:id="avg_patient_pay" prefWidth="213.0" text="AVG Patient Pay" />
+                                    <TableColumn id="money_col" fx:id="pat_avg_pay_per_rev_col" prefWidth="297.0" text="\% Patient Pay Vs. Revenue" />
+                                 </columns>
+                              </TableView>
+                              <GridPane GridPane.rowIndex="1">
+                                 <children>
+                                    <LineChart fx:id="line_chart" title="Patient No Status">
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                    </LineChart>
+                                    <PieChart fx:id="pie_graph" title="Monthly Patients" GridPane.columnIndex="1" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label fx:id="caption1" layoutX="83.0" layoutY="649.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+    </children>
+</AnchorPane>
